@@ -1,0 +1,16 @@
+[$Version]
+update_info=kmail.upd:3.3-move-identities-to-own-file,kmail.upd:3.3-aegypten-emailidentities-split-sign-encr-keys
+
+[General]
+Default Identity=1993162440
+
+[Identity #0]
+Default Domain=vlap
+Disable Fcc=false
+Email Address=%EMAIL%
+Identity=Default
+Image Location=
+Inline Signature=
+Name=%NAME%
+Signature Enabled=false
+uoid=1993162440

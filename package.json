@@ -1,0 +1,7 @@
+{
+  "name": "open365-mail-docker",
+  "dependencies": {
+    "eyeos-usernotification": "*"
+  },
+  "license": "AGPL-3.0"
+}

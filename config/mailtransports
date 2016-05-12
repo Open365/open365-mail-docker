@@ -1,0 +1,14 @@
+[$Version]
+update_info=mailtransports.upd:initial-kmail-migration,mailtransports.upd:initial-knode-migration
+
+[General]
+default-transport=1634466642
+
+[Transport 1634466642]
+auth=true
+encryption=TLS
+host=%SMTP_HOST%
+id=1634466642
+name=%SMTP_NAME%
+storepass=true
+user=%EYEOS_USER%

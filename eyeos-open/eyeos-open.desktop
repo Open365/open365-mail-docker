@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Eyeos Launcher
+Version=1.0
+Terminal=false
+NoDisplay=false
+Type=Application
+Exec=eyeos-open %U
+MimeType=application/vnd.oasis.opendocument.formula;application/vnd.sun.xml.math;application/vnd.oasis.opendocument.fo$
+GenericName=EyeosLauncher
+Comment=Eyeos launcher, forwards everything to the bus
+StartupNotify=false
+Keywords=Eyeos;forwards
+InitialPreference=5
+

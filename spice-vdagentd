@@ -1,0 +1,12 @@
+#!/bin/bash
+set -u
+set -e
+
+# This is required as spice-vdagent is called with the -f
+# option which is not used
+ARGS=$@
+if [[ $ARGS == *'-f'* ]]; then
+    ARGS=${ARGS:3}
+fi
+/usr/sbin/spice-vdagentd.old $ARGS
+

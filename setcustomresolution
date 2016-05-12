@@ -1,0 +1,8 @@
+#!/bin/sh
+export DISPLAY=:2
+set -x
+result=$(gtf "$@" | grep Modeline | sed 's/Modeline//')
+xrandr --newmode $result
+newmode="$(echo "$result" | awk '{print $1}')"
+xrandr --addmode qxl-0 "$newmode"
+xrandr --output qxl-0 --mode "$newmode"

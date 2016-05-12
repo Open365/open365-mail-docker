@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -x
+set -u
+set -e
+
+export $(dbus-launch)
+export KDE_HOME_READONLY=true
+
+kwalletd
+
+if [[ ! -f "$XDG_CONFIG_HOME"/eyeosKontactConfigured ]]; then
+	echo "Configuring Akonadi"
+	configureKontact.sh
+	touch "$XDG_CONFIG_HOME"/eyeosKontactConfigured
+else
+	updateKontactPassword.sh
+fi
+
+open365-services.js &
+kontact

@@ -1,0 +1,11 @@
+[%General]
+Driver=QMYSQL
+
+[QMYSQL]
+Name=%MYSQL_DATABASE%
+Host=%MYSQL_HOST%
+Options=
+ServerPath=/usr/libexec/mysqld
+StartServer=false
+User=%MYSQL_USERNAME%
+Password=%MYSQL_PASSWORD%
