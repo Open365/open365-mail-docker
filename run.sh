@@ -74,9 +74,11 @@ fi
 
 #su $SPICE_USER -c "/usr/bin/Xorg -config /etc/X11/spiceqxl.xorg.conf -logfile  /home/$SPICE_USER/.Xorg.2.log :2 &" 2>/dev/null
 
-/usr/sbin/locale-gen en_US.UTF-8
-export LANG="en_US.UTF-8"
-update-locale LANG="en_US.UTF-8"
+if [ -z "$LANG" ]; then
+    LANG=en_US.UTF-8
+fi
+
+/usr/sbin/locale-gen $LANG
 
 rm /tmp/.X2-lock | true
 su $SPICE_USER -c "Xspice --jpeg-wan-compression=always --vdagent :2 &"
