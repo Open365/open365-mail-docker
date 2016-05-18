@@ -16,6 +16,7 @@ RUN     apt-get update && \
             nodejs-legacy \
             git \
             kde-l10n-es \
+            kde-l10n-it \
             && \
         apt-get clean
 
