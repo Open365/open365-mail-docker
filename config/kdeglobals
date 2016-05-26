@@ -234,3 +234,6 @@ activeForeground=239,240,241
 inactiveBackground=239,240,241
 inactiveBlend=75,71,67
 inactiveForeground=189,195,199
+
+[KDE-Global GUI Settings]
+GraphicEffectsLevel=0

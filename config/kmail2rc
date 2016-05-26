@@ -150,9 +150,19 @@ LastNoteSelectedFolder=-15690
 [Reader]
 FallbackCharacterEncoding=ISO-8859-15
 attachment-strategy=smart
+htmlMail=true
 
 [Todo]
 LastSelectedFolder=12
 
 [TranslatorWidget]
 mainSplitter=0,0
+
+[MainFolderView]
+ToolTipDisplayPolicy=2
+
+[MessageListView]
+MessageToolTipEnabled=false
+
+[TemplateParser]
+replySameFormat=true
