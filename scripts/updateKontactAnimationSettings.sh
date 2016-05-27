@@ -6,6 +6,9 @@ set -x
 
 KDECONF="$KDEHOME"/share/config
 
+touch $KDECONF/breezerc
+touch $KDECONF/kdeglobals
+
 crudini --set $KDECONF/breezerc Style AnimationsEnabled false
 crudini --set $KDECONF/kdeglobals "KDE-Global GUI Settings" GraphicEffectsLevel 0
 
