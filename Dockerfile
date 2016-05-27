@@ -130,6 +130,9 @@ RUN     DEBIAN_FRONTEND=noninteractive apt-get -y autoremove \
             apt-get clean && \
             rm -rf /var/lib/apt/lists/*
 
+# We do not want zanshin, and it is not translated
+RUN     DEBIAN_FRONTEND=noninteractive apt-get -y remove zanshin
+
 COPY    [ \
             "exec.sh", \
             "mail", \
