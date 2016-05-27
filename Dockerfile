@@ -17,6 +17,7 @@ RUN     apt-get update && \
             git \
             kde-l10n-es \
             kde-l10n-it \
+            crudini \
             && \
         apt-get clean
 
@@ -136,6 +137,7 @@ COPY    [ \
             "updateKontactPassword.sh", \
             "/usr/bin/" \
         ]
+COPY    scripts/* /usr/bin/
 COPY    [ \
             "bind-mount-libraries", \
             "start.js", \

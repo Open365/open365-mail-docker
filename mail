@@ -15,6 +15,7 @@ if [[ ! -f "$XDG_CONFIG_HOME"/eyeosKontactConfigured ]]; then
 	touch "$XDG_CONFIG_HOME"/eyeosKontactConfigured
 else
 	updateKontactPassword.sh
+	updateKontactAnimationSettings.sh
 fi
 
 open365-services.js &
