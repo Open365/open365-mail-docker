@@ -72,6 +72,8 @@ if [[ ! -f /home/$SPICE_USER/.eyeosMailConfigured ]]; then
 	touch /home/$SPICE_USER/.eyeosMailConfigured
 fi
 
+chown -R 1000:1000 /home/$SPICE_USER/.config/libreoffice
+
 #su $SPICE_USER -c "/usr/bin/Xorg -config /etc/X11/spiceqxl.xorg.conf -logfile  /home/$SPICE_USER/.Xorg.2.log :2 &" 2>/dev/null
 
 if [ -z "$LANG" ]; then
